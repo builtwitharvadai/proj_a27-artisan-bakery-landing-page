@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Artisan Bakery | Fresh Baked Goods Daily</title>
+  <meta name="description" content="Discover our artisan bakery featuring fresh bread, pastries, and cakes baked daily with premium ingredients. Visit us for the finest baked goods in town.">
+  <link rel="canonical" href="https://artisanbakery.example.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  
+  <header role="banner" class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <span class="header__logo-text">Artisan Bakery</span>
+      </div>
+      <nav role="navigation" aria-label="Main navigation" class="nav">
+        <ul role="list" class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link" aria-current="page">Home</a></li>
+          <li class="nav__item"><a href="#products" class="nav__link">Products</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" role="main">
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="hero__container">
+        <h1 id="hero-title" class="hero__title">Artisan Bakery</h1>
+        <p class="hero__tagline">Freshly Baked with Love Every Day</p>
+        <a href="#products" class="hero__cta">Explore Our Products</a>
+      </div>
+    </section>
+
+    <section id="products" class="products" aria-labelledby="products-title">
+      <div class="products__container">
+        <header class="products__header">
+          <h2 id="products-title" class="products__title">Our Products</h2>
+          <p class="products__description">Handcrafted daily using traditional methods and premium ingredients</p>
+        </header>
+        
+        <div class="products__grid">
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <img src="images/bread-placeholder.jpg" alt="Artisan bread loaves" class="product-card__image" loading="lazy" width="400" height="300">
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Artisan Breads</h3>
+              <p class="product-card__description">Sourdough, whole wheat, and specialty breads baked fresh daily</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <img src="images/pastries-placeholder.jpg" alt="Fresh pastries and croissants" class="product-card__image" loading="lazy" width="400" height="300">
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Pastries</h3>
+              <p class="product-card__description">Buttery croissants, danishes, and sweet treats made with care</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <img src="images/cakes-placeholder.jpg" alt="Custom cakes and desserts" class="product-card__image" loading="lazy" width="400" height="300">
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Cakes & Desserts</h3>
+              <p class="product-card__description">Custom cakes and decadent desserts for every occasion</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <img src="images/cookies-placeholder.jpg" alt="Freshly baked cookies" class="product-card__image" loading="lazy" width="400" height="300">
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Cookies</h3>
+              <p class="product-card__description">Classic and gourmet cookies baked to perfection</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about" aria-labelledby="about-title">
+      <div class="about__container">
+        <header class="about__header">
+          <h2 id="about-title" class="about__title">Our Story</h2>
+        </header>
+        
+        <div class="about__content">
+          <div class="about__text">
+            <p class="about__paragraph">Welcome to Artisan Bakery, where tradition meets passion. For over 20 years, we've been dedicated to crafting the finest baked goods using time-honored techniques and the highest quality ingredients.</p>
+            <p class="about__paragraph">Our master bakers start before dawn each day to ensure every loaf, pastry, and cake is fresh and perfect. We believe in the art of baking – taking the time to let dough rise naturally, using real butter, and never cutting corners.</p>
+            <p class="about__paragraph">From our family to yours, we're committed to bringing you the authentic taste of artisan baking. Every bite tells the story of our dedication to quality and craftsmanship.</p>
+          </div>
+          <aside class="about__image-wrapper">
+            <img src="images/bakery-placeholder.jpg" alt="Inside our artisan bakery" class="about__image" loading="lazy" width="600" height="400">
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <div class="contact__container">
+        <header class="contact__header">
+          <h2 id="contact-title" class="contact__title">Visit Us</h2>
+        </header>
+        
+        <div class="contact__content">
+          <div class="contact__info">
+            <div class="contact__info-item">
+              <h3 class="contact__info-title">Location</h3>
+              <address class="contact__address">
+                123 Baker Street<br>
+                Artisan District<br>
+                City, State 12345
+              </address>
+            </div>
+
+            <div class="contact__info-item">
+              <h3 class="contact__info-title">Hours</h3>
+              <dl class="contact__hours">
+                <dt class="contact__hours-day">Monday - Friday</dt>
+                <dd class="contact__hours-time">7:00 AM - 7:00 PM</dd>
+                <dt class="contact__hours-day">Saturday</dt>
+                <dd class="contact__hours-time">8:00 AM - 6:00 PM</dd>
+                <dt class="contact__hours-day">Sunday</dt>
+                <dd class="contact__hours-time">8:00 AM - 4:00 PM</dd>
+              </dl>
+            </div>
+
+            <div class="contact__info-item">
+              <h3 class="contact__info-title">Contact</h3>
+              <p class="contact__detail">
+                <strong>Phone:</strong> <a href="tel:+15551234567" class="contact__link">(555) 123-4567</a>
+              </p>
+              <p class="contact__detail">
+                <strong>Email:</strong> <a href="mailto:hello@artisanbakery.com" class="contact__link">hello@artisanbakery.com</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact__map">
+            <div class="contact__map-placeholder" role="img" aria-label="Map showing bakery location at 123 Baker Street">
+              <p class="contact__map-text">Map Placeholder</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo" class="footer">
+    <div class="footer__container">
+      <div class="footer__content">
+        <div class="footer__brand">
+          <p class="footer__brand-name">Artisan Bakery</p>
+          <p class="footer__tagline">Baked with Love Since 2004</p>
+        </div>
+
+        <nav aria-label="Social media links" class="footer__social">
+          <h3 class="footer__social-title">Follow Us</h3>
+          <ul role="list" class="footer__social-list">
+            <li class="footer__social-item">
+              <a href="https://facebook.com/artisanbakery" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
+                <span class="footer__social-text">Facebook</span>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="https://instagram.com/artisanbakery" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram profile">
+                <span class="footer__social-text">Instagram</span>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="https://twitter.com/artisanbakery" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Visit our Twitter profile">
+                <span class="footer__social-text">Twitter</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2024 Artisan Bakery. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
