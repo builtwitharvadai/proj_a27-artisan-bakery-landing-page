@@ -308,28 +308,51 @@ a:focus-visible {
    ============================================ */
 
 .hero {
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-  color: var(--color-white);
-  padding: var(--space-4xl) var(--container-padding);
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  color: var(--color-white);
+  background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1920&h=1080');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  isolation: isolate;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(139, 69, 19, 0.85) 0%, rgba(101, 67, 33, 0.85) 100%);
+  z-index: -1;
 }
 
 .hero__container {
   max-width: var(--container-max-width);
   margin: 0 auto;
+  padding: var(--space-4xl) var(--container-padding);
+  position: relative;
+  z-index: 1;
 }
 
 .hero__title {
   font-size: var(--font-size-4xl);
   color: var(--color-white);
   margin-bottom: var(--space-md);
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
 }
 
 .hero__tagline {
   font-size: var(--font-size-xl);
   margin-bottom: var(--space-2xl);
   opacity: 0.95;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  font-weight: var(--font-weight-normal);
 }
 
 .hero__cta {
@@ -341,13 +364,14 @@ a:focus-visible {
   font-size: var(--font-size-lg);
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-lg);
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
 }
 
 .hero__cta:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-xl);
   text-decoration: none;
+  background-color: var(--color-gray-50);
 }
 
 .hero__cta:active {
@@ -778,6 +802,11 @@ a:focus-visible {
     background: none;
     color: #000;
     padding: 1rem 0;
+    min-height: auto;
+  }
+  
+  .hero::before {
+    display: none;
   }
   
   .hero__title {
