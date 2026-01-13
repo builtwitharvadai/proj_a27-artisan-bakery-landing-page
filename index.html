@@ -16,7 +16,20 @@
       <div class="header__logo">
         <span class="header__logo-text">Artisan Bakery</span>
       </div>
-      <nav role="navigation" aria-label="Main navigation" class="nav">
+      <button 
+        type="button" 
+        class="mobile-menu-toggle" 
+        aria-expanded="false" 
+        aria-controls="main-navigation"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="mobile-menu-toggle__icon">
+          <span class="mobile-menu-toggle__line"></span>
+          <span class="mobile-menu-toggle__line"></span>
+          <span class="mobile-menu-toggle__line"></span>
+        </span>
+      </button>
+      <nav id="main-navigation" role="navigation" aria-label="Main navigation" class="nav">
         <ul role="list" class="nav__list">
           <li class="nav__item"><a href="#home" class="nav__link" aria-current="page">Home</a></li>
           <li class="nav__item"><a href="#products" class="nav__link">Products</a></li>
@@ -218,5 +231,6 @@
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
