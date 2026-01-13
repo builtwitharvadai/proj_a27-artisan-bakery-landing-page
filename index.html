@@ -1,236 +1,343 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Artisan Bakery | Fresh Baked Goods Daily</title>
-  <meta name="description" content="Discover our artisan bakery featuring fresh bread, pastries, and cakes baked daily with premium ingredients. Visit us for the finest baked goods in town.">
-  <link rel="canonical" href="https://artisanbakery.example.com">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>Professional Web Development Services | Custom Websites & Digital Solutions</title>
+    <meta name="title" content="Professional Web Development Services | Custom Websites & Digital Solutions">
+    <meta name="description" content="Expert web development services specializing in custom websites, responsive design, e-commerce solutions, and digital transformation. Transform your online presence with cutting-edge technology and user-centric design.">
+    <meta name="keywords" content="web development, custom websites, responsive design, e-commerce, web applications, frontend development, backend development, full stack development, UI/UX design, digital solutions, website design, web services">
+    <meta name="author" content="Professional Web Development Services">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:title" content="Professional Web Development Services | Custom Websites & Digital Solutions">
+    <meta property="og:description" content="Expert web development services specializing in custom websites, responsive design, e-commerce solutions, and digital transformation. Transform your online presence with cutting-edge technology.">
+    <meta property="og:image" content="https://yourdomain.com/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Professional Web Development Services">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://yourdomain.com/">
+    <meta name="twitter:title" content="Professional Web Development Services | Custom Websites & Digital Solutions">
+    <meta name="twitter:description" content="Expert web development services specializing in custom websites, responsive design, e-commerce solutions, and digital transformation.">
+    <meta name="twitter:image" content="https://yourdomain.com/images/twitter-image.jpg">
+    <meta name="twitter:creator" content="@yourhandle">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourdomain.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    
+    <!-- Structured Data Markup (JSON-LD) for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Professional Web Development Services",
+      "image": "https://yourdomain.com/images/logo.jpg",
+      "@id": "https://yourdomain.com",
+      "url": "https://yourdomain.com",
+      "telephone": "+1-555-123-4567",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Tech Street",
+        "addressLocality": "San Francisco",
+        "addressRegion": "CA",
+        "postalCode": "94102",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/yourpage",
+        "https://www.twitter.com/yourhandle",
+        "https://www.linkedin.com/company/yourcompany",
+        "https://www.instagram.com/yourhandle"
+      ],
+      "description": "Expert web development services specializing in custom websites, responsive design, e-commerce solutions, and digital transformation.",
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "geoRadius": "50000"
+      },
+      "serviceType": [
+        "Web Development",
+        "Custom Website Design",
+        "E-commerce Solutions",
+        "Responsive Web Design",
+        "Web Application Development"
+      ]
+    }
+    </script>
+    
+    <!-- Additional Structured Data for Services -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Web Development",
+      "provider": {
+        "@type": "ProfessionalService",
+        "name": "Professional Web Development Services"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Web Development Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Custom Website Development"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "E-commerce Solutions"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Responsive Web Design"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to main content</a>
-  
-  <header role="banner" class="header">
-    <div class="header__container">
-      <div class="header__logo">
-        <span class="header__logo-text">Artisan Bakery</span>
-      </div>
-      <button 
-        type="button" 
-        class="mobile-menu-toggle" 
-        aria-expanded="false" 
-        aria-controls="main-navigation"
-        aria-label="Toggle navigation menu"
-      >
-        <span class="mobile-menu-toggle__icon">
-          <span class="mobile-menu-toggle__line"></span>
-          <span class="mobile-menu-toggle__line"></span>
-          <span class="mobile-menu-toggle__line"></span>
-        </span>
-      </button>
-      <nav id="main-navigation" role="navigation" aria-label="Main navigation" class="nav">
-        <ul role="list" class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link" aria-current="page">Home</a></li>
-          <li class="nav__item"><a href="#products" class="nav__link">Products</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main" role="main">
-    <section id="home" class="hero" aria-labelledby="hero-title">
-      <div class="hero__container">
-        <h1 id="hero-title" class="hero__title">Artisan Bakery</h1>
-        <p class="hero__tagline">Freshly Baked Daily with Love and Tradition</p>
-        <a href="#contact" class="hero__cta">Get in Touch</a>
-      </div>
-    </section>
-
-    <section id="products" class="products" aria-labelledby="products-title">
-      <div class="products__container">
-        <header class="products__header">
-          <h2 id="products-title" class="products__title">Our Products</h2>
-          <p class="products__description">Handcrafted daily using traditional methods and premium ingredients</p>
-        </header>
-        
-        <div class="products__grid">
-          <article class="product-card">
-            <div class="product-card__image-wrapper">
-              <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&h=400&fit=crop" alt="Artisan bread loaves with rustic crusts" class="product-card__image" loading="lazy" width="600" height="400">
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link" aria-label="Skip to main content">Skip to main content</a>
+    
+    <!-- Header -->
+    <header role="banner">
+        <nav role="navigation" aria-label="Main navigation">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Professional Web Development Services Logo" width="150" height="50">
             </div>
-            <div class="product-card__content">
-              <h3 class="product-card__title">Artisan Breads</h3>
-              <p class="product-card__description">Traditional sourdough, whole wheat, and multigrain loaves baked fresh every morning using time-honored techniques and natural fermentation</p>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-card__image-wrapper">
-              <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&h=400&fit=crop" alt="Fresh pastries and croissants" class="product-card__image" loading="lazy" width="600" height="400">
-            </div>
-            <div class="product-card__content">
-              <h3 class="product-card__title">Fresh Pastries</h3>
-              <p class="product-card__description">Buttery croissants, flaky danishes, and delicate sweet treats made with premium European butter and filled with seasonal fruits</p>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-card__image-wrapper">
-              <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&h=400&fit=crop" alt="Custom decorated celebration cakes" class="product-card__image" loading="lazy" width="600" height="400">
-            </div>
-            <div class="product-card__content">
-              <h3 class="product-card__title">Custom Cakes</h3>
-              <p class="product-card__description">Beautifully crafted custom cakes for weddings, birthdays, and special occasions, designed to your specifications with premium ingredients</p>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-card__image-wrapper">
-              <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=600&h=400&fit=crop" alt="Freshly baked gourmet cookies" class="product-card__image" loading="lazy" width="600" height="400">
-            </div>
-            <div class="product-card__content">
-              <h3 class="product-card__title">Gourmet Cookies</h3>
-              <p class="product-card__description">Classic chocolate chip, oatmeal raisin, and specialty cookies baked to golden perfection with real butter and premium chocolate</p>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-card__image-wrapper">
-              <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=600&h=400&fit=crop" alt="Seasonal specialty baked goods" class="product-card__image" loading="lazy" width="600" height="400">
-            </div>
-            <div class="product-card__content">
-              <h3 class="product-card__title">Seasonal Specialties</h3>
-              <p class="product-card__description">Limited-time seasonal offerings featuring pumpkin spice treats, holiday cookies, and festive breads made with fresh, seasonal ingredients</p>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-card__image-wrapper">
-              <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=600&h=400&fit=crop" alt="Fresh homemade soups in bowls" class="product-card__image" loading="lazy" width="600" height="400">
-            </div>
-            <div class="product-card__content">
-              <h3 class="product-card__title">Daily Soups</h3>
-              <p class="product-card__description">Hearty homemade soups prepared fresh daily, perfect for pairing with our artisan breads for a complete and satisfying meal</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="about" aria-labelledby="about-title">
-      <div class="about__container">
-        <header class="about__header">
-          <h2 id="about-title" class="about__title">Our Story</h2>
-        </header>
-        
-        <div class="about__content">
-          <div class="about__text">
-            <p class="about__paragraph">Founded over two decades ago by the Martinez family, Artisan Bakery began as a humble neighborhood shop with a simple mission: to bring the authentic taste of traditional European baking to our community. What started in a small kitchen has grown into a beloved local institution, but our commitment to craftsmanship has never wavered.</p>
-            <p class="about__paragraph">Every morning before dawn, our master bakers begin their work, following recipes passed down through three generations. We believe in the slow art of baking – allowing our sourdough starters to ferment naturally for days, hand-shaping each loaf, and never rushing the process. We source our flour from local mills, our butter from nearby dairies, and our seasonal fruits from farmers we know by name. This dedication to quality ingredients and time-honored methods means every bite carries the authentic flavor that only patience and passion can create.</p>
-            <p class="about__paragraph">But we're more than just a bakery – we're part of the fabric of this neighborhood. From birthday cakes that mark life's milestones to the daily bread that brings families together at dinner tables, we're honored to be part of your story. Our doors are always open, our ovens are always warm, and our commitment to serving you the finest baked goods remains as strong today as it was on day one. From our family to yours, thank you for making us part of your community.</p>
-          </div>
-          <aside class="about__image-wrapper">
-            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&h=600&fit=crop" alt="Baker's hands kneading artisan bread dough on a wooden surface in our traditional bakery" class="about__image" loading="lazy" width="800" height="600">
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact" aria-labelledby="contact-title">
-      <div class="contact__container">
-        <header class="contact__header">
-          <h2 id="contact-title" class="contact__title">Visit Us</h2>
-        </header>
-        
-        <div class="contact__content">
-          <div class="contact__info">
-            <div class="contact__info-item">
-              <h3 class="contact__info-title">Location</h3>
-              <address class="contact__address">
-                123 Main Street<br>
-                Bakery Town, ST 12345
-              </address>
-            </div>
-
-            <div class="contact__info-item">
-              <h3 class="contact__info-title">Hours</h3>
-              <dl class="contact__hours">
-                <dt class="contact__hours-day">Monday</dt>
-                <dd class="contact__hours-time">7:00 AM - 7:00 PM</dd>
-                <dt class="contact__hours-day">Tuesday</dt>
-                <dd class="contact__hours-time">7:00 AM - 7:00 PM</dd>
-                <dt class="contact__hours-day">Wednesday</dt>
-                <dd class="contact__hours-time">7:00 AM - 7:00 PM</dd>
-                <dt class="contact__hours-day">Thursday</dt>
-                <dd class="contact__hours-time">7:00 AM - 7:00 PM</dd>
-                <dt class="contact__hours-day">Friday</dt>
-                <dd class="contact__hours-time">7:00 AM - 7:00 PM</dd>
-                <dt class="contact__hours-day">Saturday</dt>
-                <dd class="contact__hours-time">8:00 AM - 6:00 PM</dd>
-                <dt class="contact__hours-day">Sunday</dt>
-                <dd class="contact__hours-time">8:00 AM - 4:00 PM</dd>
-              </dl>
-            </div>
-
-            <div class="contact__info-item">
-              <h3 class="contact__info-title">Contact</h3>
-              <p class="contact__detail">
-                <strong>Phone:</strong> <a href="tel:+15551234567" class="contact__link">555-123-4567</a>
-              </p>
-              <p class="contact__detail">
-                <strong>Email:</strong> <a href="mailto:hello@artisanbakery.com" class="contact__link">hello@artisanbakery.com</a>
-              </p>
-            </div>
-          </div>
-
-          <div class="contact__map">
-            <div class="contact__map-placeholder" role="img" aria-label="Map showing bakery location at 123 Main Street, Bakery Town">
-              <p class="contact__map-text">Map Placeholder</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer role="contentinfo" class="footer">
-    <div class="footer__container">
-      <div class="footer__content">
-        <div class="footer__brand">
-          <p class="footer__brand-name">Artisan Bakery</p>
-          <p class="footer__tagline">Baked with Love Since 2004</p>
-        </div>
-
-        <nav aria-label="Social media links" class="footer__social">
-          <h3 class="footer__social-title">Follow Us</h3>
-          <ul role="list" class="footer__social-list">
-            <li class="footer__social-item">
-              <a href="https://facebook.com/artisanbakery" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
-                <span class="footer__social-text">Facebook</span>
-              </a>
-            </li>
-            <li class="footer__social-item">
-              <a href="https://instagram.com/artisanbakery" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram profile">
-                <span class="footer__social-text">Instagram</span>
-              </a>
-            </li>
-            <li class="footer__social-item">
-              <a href="https://twitter.com/artisanbakery" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Visit our Twitter profile">
-                <span class="footer__social-text">Twitter</span>
-              </a>
-            </li>
-          </ul>
+            <ul>
+                <li><a href="#home" aria-label="Navigate to home section">Home</a></li>
+                <li><a href="#services" aria-label="Navigate to services section">Services</a></li>
+                <li><a href="#portfolio" aria-label="Navigate to portfolio section">Portfolio</a></li>
+                <li><a href="#about" aria-label="Navigate to about section">About</a></li>
+                <li><a href="#contact" aria-label="Navigate to contact section">Contact</a></li>
+            </ul>
         </nav>
-      </div>
-
-      <div class="footer__bottom">
-        <p class="footer__copyright">&copy; 2024 Artisan Bakery. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-  <script src="script.js"></script>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section id="home" class="hero" aria-labelledby="hero-heading">
+            <h1 id="hero-heading">Professional Web Development Services</h1>
+            <p class="hero-subtitle">Transform Your Digital Presence with Custom Web Solutions</p>
+            <a href="#contact" class="cta-button" role="button" aria-label="Get started with our services">Get Started</a>
+        </section>
+        
+        <!-- Services Section -->
+        <section id="services" class="services" aria-labelledby="services-heading">
+            <h2 id="services-heading">Our Services</h2>
+            <div class="services-grid" role="list">
+                <article class="service-card" role="listitem">
+                    <img src="images/web-design-icon.svg" alt="Custom web design icon representing creative website development" width="80" height="80">
+                    <h3>Custom Web Design</h3>
+                    <p>Beautiful, user-centric designs tailored to your brand identity and business goals.</p>
+                </article>
+                <article class="service-card" role="listitem">
+                    <img src="images/responsive-icon.svg" alt="Responsive design icon showing multiple device compatibility" width="80" height="80">
+                    <h3>Responsive Development</h3>
+                    <p>Mobile-first websites that work seamlessly across all devices and screen sizes.</p>
+                </article>
+                <article class="service-card" role="listitem">
+                    <img src="images/ecommerce-icon.svg" alt="E-commerce icon representing online shopping solutions" width="80" height="80">
+                    <h3>E-commerce Solutions</h3>
+                    <p>Powerful online stores with secure payment processing and inventory management.</p>
+                </article>
+                <article class="service-card" role="listitem">
+                    <img src="images/webapp-icon.svg" alt="Web application icon representing custom software development" width="80" height="80">
+                    <h3>Web Applications</h3>
+                    <p>Custom web applications built with modern frameworks and best practices.</p>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio" aria-labelledby="portfolio-heading">
+            <h2 id="portfolio-heading">Our Work</h2>
+            <div class="portfolio-grid" role="list">
+                <figure class="portfolio-item" role="listitem">
+                    <img src="images/project1.jpg" alt="E-commerce website project showcasing modern design and functionality" width="400" height="300" loading="lazy">
+                    <figcaption>
+                        <h3>E-commerce Platform</h3>
+                        <p>Modern online shopping experience</p>
+                    </figcaption>
+                </figure>
+                <figure class="portfolio-item" role="listitem">
+                    <img src="images/project2.jpg" alt="Corporate website project featuring professional business presentation" width="400" height="300" loading="lazy">
+                    <figcaption>
+                        <h3>Corporate Website</h3>
+                        <p>Professional business presence</p>
+                    </figcaption>
+                </figure>
+                <figure class="portfolio-item" role="listitem">
+                    <img src="images/project3.jpg" alt="Web application project demonstrating custom software solution" width="400" height="300" loading="lazy">
+                    <figcaption>
+                        <h3>Web Application</h3>
+                        <p>Custom business solution</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Us</h2>
+            <div class="about-content">
+                <img src="images/team.jpg" alt="Professional web development team collaborating on projects" width="500" height="350" loading="lazy">
+                <div class="about-text">
+                    <h3>Expert Web Development Team</h3>
+                    <p>With over 10 years of experience, we deliver cutting-edge web solutions that drive business growth and enhance user engagement. Our team of skilled developers, designers, and strategists work collaboratively to bring your vision to life.</p>
+                    <ul aria-label="Our key strengths">
+                        <li>10+ years of industry experience</li>
+                        <li>100+ successful projects delivered</li>
+                        <li>Expert team of certified professionals</li>
+                        <li>Commitment to quality and innovation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Get In Touch</h2>
+            <form class="contact-form" action="/submit" method="POST" aria-label="Contact form">
+                <div class="form-group">
+                    <label for="name">Name <span aria-label="required">*</span></label>
+                    <input type="text" id="name" name="name" required aria-required="true" aria-describedby="name-error">
+                    <span id="name-error" class="error-message" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span aria-label="required">*</span></label>
+                    <input type="email" id="email" name="email" required aria-required="true" aria-describedby="email-error">
+                    <span id="email-error" class="error-message" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" aria-describedby="phone-help">
+                    <span id="phone-help" class="help-text">Optional: Include country code</span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message <span aria-label="required">*</span></label>
+                    <textarea id="message" name="message" rows="5" required aria-required="true" aria-describedby="message-error"></textarea>
+                    <span id="message-error" class="error-message" role="alert" aria-live="polite"></span>
+                </div>
+                <button type="submit" class="submit-button" aria-label="Submit contact form">Send Message</button>
+            </form>
+            <div class="contact-info" aria-label="Contact information">
+                <h3>Contact Information</h3>
+                <address>
+                    <p><strong>Address:</strong> 123 Tech Street, San Francisco, CA 94102</p>
+                    <p><strong>Phone:</strong> <a href="tel:+15551234567" aria-label="Call us at +1-555-123-4567">+1 (555) 123-4567</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@webdev.com" aria-label="Email us at info@webdev.com">info@webdev.com</a></p>
+                </address>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Professional Web Development</h3>
+                <p>Creating exceptional digital experiences since 2014</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <nav aria-label="Footer navigation">
+                    <ul>
+                        <li><a href="#home" aria-label="Navigate to home section">Home</a></li>
+                        <li><a href="#services" aria-label="Navigate to services section">Services</a></li>
+                        <li><a href="#portfolio" aria-label="Navigate to portfolio section">Portfolio</a></li>
+                        <li><a href="#about" aria-label="Navigate to about section">About</a></li>
+                        <li><a href="#contact" aria-label="Navigate to contact section">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links" role="list" aria-label="Social media links">
+                    <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page (opens in new tab)" role="listitem">
+                        <img src="images/facebook-icon.svg" alt="Facebook" width="32" height="32">
+                    </a>
+                    <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer" aria-label="Visit our Twitter profile (opens in new tab)" role="listitem">
+                        <img src="images/twitter-icon.svg" alt="Twitter" width="32" height="32">
+                    </a>
+                    <a href="https://linkedin.com/company/yourcompany" target="_blank" rel="noopener noreferrer" aria-label="Visit our LinkedIn page (opens in new tab)" role="listitem">
+                        <img src="images/linkedin-icon.svg" alt="LinkedIn" width="32" height="32">
+                    </a>
+                    <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram profile (opens in new tab)" role="listitem">
+                        <img src="images/instagram-icon.svg" alt="Instagram" width="32" height="32">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Professional Web Development Services. All rights reserved.</p>
+            <nav aria-label="Legal navigation">
+                <a href="/privacy-policy" aria-label="Read our privacy policy">Privacy Policy</a> | 
+                <a href="/terms-of-service" aria-label="Read our terms of service">Terms of Service</a>
+            </nav>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
 </body>
 </html>
