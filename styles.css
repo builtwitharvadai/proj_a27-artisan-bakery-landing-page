@@ -554,50 +554,88 @@ a:focus-visible {
 
 .contact__info-item {
   background-color: var(--color-white);
-  padding: var(--space-lg);
+  padding: var(--space-xl);
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.contact__info-item:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
 }
 
 .contact__info-title {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
   color: var(--color-primary);
   margin-bottom: var(--space-md);
+  font-weight: var(--font-weight-semibold);
+  border-bottom: 2px solid var(--color-gray-100);
+  padding-bottom: var(--space-sm);
 }
 
 .contact__address {
   font-style: normal;
   line-height: var(--line-height-relaxed);
   color: var(--color-text-secondary);
+  font-size: var(--font-size-base);
 }
 
 .contact__hours {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: var(--space-sm) var(--space-md);
+  gap: var(--space-sm) var(--space-lg);
+  row-gap: var(--space-md);
 }
 
 .contact__hours-day {
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-semibold);
   color: var(--color-text-primary);
+  font-size: var(--font-size-base);
 }
 
 .contact__hours-time {
   color: var(--color-text-secondary);
+  font-size: var(--font-size-base);
+  text-align: right;
 }
 
 .contact__detail {
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-md);
   color: var(--color-text-secondary);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
 }
 
 .contact__detail:last-child {
   margin-bottom: 0;
 }
 
+.contact__detail strong {
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-semibold);
+  display: inline-block;
+  min-width: 4rem;
+}
+
 .contact__link {
   color: var(--color-primary);
   font-weight: var(--font-weight-medium);
+  transition: color var(--transition-fast), text-decoration var(--transition-fast);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.contact__link:hover {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+  border-bottom-color: var(--color-primary-dark);
+}
+
+.contact__link:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: var(--border-radius-sm);
 }
 
 .contact__map {
@@ -776,6 +814,10 @@ a:focus-visible {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--space-lg);
+  }
+  
+  .contact__hours {
+    gap: var(--space-xs) var(--space-md);
   }
 }
 
